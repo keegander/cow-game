@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game</title>
+  <link type="text/css" rel="stylesheet"
+    href="css/stylesheet.css"/>
+</head>
+<body>
+  <div id="game">
+  </div>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="game.html">Play The Game</a></li>
+    <li><a href="credits.html">Credits</a></li>
+  </ul>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.5/howler.core.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyC4CC7ElzSdvW0DK5zOBcGpdxEKyUbsv-o",
+      authDomain: "cow-game-c8198.firebaseapp.com",
+      databaseURL: "https://cow-game-c8198.firebaseio.com",
+      projectId: "cow-game-c8198",
+      storageBucket: "",
+      messagingSenderId: "805394487413"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="js/game.js"></script>
+  <script>newGame()</script>
+</body>
+</html>

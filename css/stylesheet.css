@@ -1,0 +1,120 @@
+body {
+  background-color:#299999;
+  border: 2px solid gray;
+  font-family: fantasy;
+  color: black ;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+  min-width: 256px;
+  padding-top: 8px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.playing-game {
+  background-color: white;
+  border: none;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  max-width: unset;
+}
+
+#game {
+  height: 100%;
+}
+
+.playing-game .menu {
+  display: none;
+}
+
+html {
+  background: radial-gradient(circle, SkyBlue,
+    SkyBlue 50%, LightCyan 50%,
+    SkyBlue);
+  background-size: 8px 8px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 50%;
+}
+
+.players {
+  display: flex;
+  height: 50vh;
+  border: 3px solid gray;
+}
+
+.player {
+  flex: 1;
+  text-align: center;
+}
+
+.cow-count, .player-name {
+  height: 18px;
+}
+
+.cow-bar {
+  height: calc(100% - 36px);
+}
+
+.cow-bar .fill {
+  width: 50px;
+  background-color: black;
+  height: 100%;
+  transform-origin: bottom;
+  margin: 0 auto;
+}
+
+.player1 {
+  color: red;
+}
+
+.player1 .cow-bar .fill {
+  background-color: red;
+}
+
+.player2 {
+  color: blue;
+}
+
+.player2 .cow-bar .fill {
+  background-color: blue;
+}
+
+.player3 {
+  color: green;
+}
+
+.player3 .cow-bar .fill{
+  background-color: green;
+}
+
+.player4 {
+  color: purple;
+}
+
+.player4 .cow-bar .fill{
+  background-color: purple;
+}
+
+.history {
+  height: 200px;
+  overflow-y: scroll;
+  border: 3px solid #666;
+}
+
+.game-over {
+  font-size: 14vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
